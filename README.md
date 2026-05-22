@@ -1,316 +1,599 @@
+<div align="center">
+
+<img width="220" src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" />
+
+# 🚪 CratePass
+
+### Plataforma descentralizada de gestión de gate-passes sobre Stellar & Soroban ⚡
+
 <p align="center">
-<img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/49400555-4da3-4448-9ee0-6b5cae39c8db" style="margin: 0 auto;" alt="Ga" width="200"/>
+  <b>CratePass</b> es una aplicación blockchain desarrollada sobre Stellar que permite gestionar pases de acceso de manera segura, transparente y descentralizada mediante smart contracts Soroban.
 </p>
 
-# CratePass (Blockchian Based Gate-Pass Dapp)
+<p align="center">
+  <img src="https://img.shields.io/badge/Stellar-Blockchain-7B61FF?style=for-the-badge&logo=stellar&logoColor=white">
+  <img src="https://img.shields.io/badge/Soroban-Smart_Contracts-000000?style=for-the-badge&logo=rust&logoColor=white">
+  <img src="https://img.shields.io/badge/React-Web3_Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+  <img src="https://img.shields.io/badge/TailwindCSS-Responsive_UI-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white">
+</p>
 
-The CratePass dApp is a responsive, blockchain-based application deployed on the Stellar Blockchain, leveraging the security and transparency of decentralized technology. This application facilitates the efficient management of gate passes through a robust and tamper-proof system. The smart contract underpinning the CratePass dApp is written in Rust, utilizing SorobonSDK for seamless integration with the Stellar network. Users can register and manage their gate passes securely, while administrators have the authority to approve or deny these passes, ensuring a controlled and trustworthy access management solution. This innovative approach significantly enhances security, reduces administrative overhead, and provides real-time verification of gate pass statuses.
+<p align="center">
+  <a href="#-acerca-del-proyecto">Acerca</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-vista-previa">Vista previa</a>
+</p>
 
-#### [▶️ Demo Video](https://drive.google.com/file/d/1LXGFo1Um5DeSQZrfu7iyAl2ZQUwZ5RlS/view?usp=sharing)
-
-# How this dapp got its name?
-
-#### Crypto + Gate Pass => CratePass
-
----
-
-## Project Visuals (All Screen-responsive, UI-Screenshots):
-
-### Life Cycle of a Pass:
-   - Creating Pass:
-     ![Creating Pass](https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/c110b525-f765-4f82-982b-c97821167a20)
-
-   - Checking Pass Status (Regular User):
-     ![Checking Pass Status](https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/8038055d-ae3f-412b-b4ff-6213f0d703f4)
-
-   - Admin checking the count of all types of passes and also approving the requests of pending passes by Regular user:
-     ![Admin Checking and Approving passes](https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/f39f2c87-bbcf-4773-a6f7-a8638992595b)
-
-   - Regular User expiring their approved pass:
-     ![Screenshot from 2024-06-02 14-46-23](https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/9de10af7-0ffa-475f-8932-e1209fe6a895)
-
-### Tablet View:
-   <div style="display: flex;">
-      Regular User V/s Admin View:
-         <br/>
-         <img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/186d946a-fba1-4960-a03b-2aa1182a897b" style="margin: 0 auto;" alt="Ga" width="400"/>
-         <img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/69104cc9-a640-479d-b58d-34541051f3be" style="margin: 0 auto;" alt="Ga" width="400"/>
-   </div>
- 
- ### Mobile View:
-
-   <div style="display: flex;">
-      Regular User V/s Admin View:
-         <br/>
-         <img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/ef0f2b38-6e21-4c44-a8be-d59487a49e5e" style="margin: 0 auto;" alt="Ga" width="300"/>
-         <img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/466897e2-fb47-4a9a-a964-85720ed13558" style="margin: 0 auto;" alt="Ga" width="300"/>
-   </div>
+</div>
 
 ---
 
-## About Me
+# 🌌 Acerca del proyecto
 
-- I'm a final year undergrad, pursuing my Bachelor of Technology(B.Tech) degree from 'Computer Science & Engineering' branch at International Institute of Information Technology (IIIT), Naya Raipur, Chhattisgarh, India.
-- A Web Developer, Web3.0/Blockchain-AI enthusiast who like doing graphic designing.
-- Some of my Web3 project are [Citizen-Centric FIR system Prototype using blockchain](https://github.com/Bhupendrachouhan19/Citizen-centric-FIR-system-Prototype-using-blockchain) and [Tax-Invoice Automation](https://github.com/Bhupendrachouhan19/tax_invoice_automation).
-- Skills:
-  - Language/Frameworks: HTML, CSS, JavaScript, SQL, Solidity, React.JS, Next.JS, NodeJs, MongoDB, TailwindCSS
-  - Tools: Git, GitHub, Adobe Photoshop, Figma, Canva
-  - Platforms: Windows, Linux
-  - IT Constructs : OOPs, Computer Networks, Cryptography
+**CratePass** es una aplicación descentralizada (dApp) enfocada en la gestión segura de pases de acceso utilizando blockchain y smart contracts sobre Stellar mediante Soroban.
 
----
+El sistema permite:
 
-## Vision
+- 🚪 Crear gate-passes
+- ✅ Aprobar accesos
+- ❌ Rechazar solicitudes
+- 📋 Consultar estados de pases
+- 🔒 Gestionar control de acceso
+- 🌐 Verificación blockchain
+- ⚡ Administración descentralizada
 
-The vision is to revolutionize access management through the CratePass dApp on the Stellar Blockchain. By leveraging blockchain technology, we aim to provide a secure, transparent, and efficient system for managing gate passes. This project will significantly reduce administrative overhead, prevent unauthorized access, and ensure real-time verification. By streamlining the approval process and enhancing security, we envision widespread adoption across industries, from corporate campuses to gated communities. The goal is to set a new standard for access control, promoting safety and efficiency for all stakeholders.
+La plataforma fue desarrollada con enfoque en:
 
----
-
-## Project Description
-
-The CratePass dApp on the Stellar Blockchain facilitates secure and efficient management of gate passes. The application serves two user types:
-
-- Regular Users: Can register for a gate pass, check its status, and expire their pass once used.
-- Admin: Holds administrative privileges to approve or reject gate passes registered by Regular Users.
-
-The deployment of the smart contract is managed by the Admin user, ensuring a single, authorized control point. Regular users neither have the ability to approve nor modify passes their own or other users pass, maintaining strict access control. This structure ensures that only authorized personnel can validate gate passes, enhancing security and reliability within the platform.
+- 🔐 Seguridad blockchain
+- 🌐 Transparencia descentralizada
+- ⚡ Gestión eficiente
+- 🧩 Smart contracts Soroban
+- 📱 Interfaces responsivas
+- 🚀 Escalabilidad moderna
 
 ---
 
-## Road Maps/Future Plans
+# ✨ Características
 
-- Implementing a more robust authentication system for the Admin.
-- Right now, all the fields that make up a pass are divided into two parts based on which entity  (i.e., Regular User and Admin) controls which part of Pass data. Due to this, the regular user has to perform two different transactions to get all the data related to a pass.
-- May be a more modern UI better.
+## 🚪 Gestión de Gate-Passes
 
----
-
-## The Tech and Tools used:
-
-- [Rust](https://doc.rust-lang.org/book/) Programming Language & Web3
-- Crypto Wallet ([Freighter](https://www.freighter.app/))
-- [Sorobon-SDK](https://developers.stellar.org/docs/tools/sdks/library) to develop the smart-contract
-- Stellar Blockchain (Testnet)
-- [Stellar Block Explorer](https://stellarscan.io/) for tracking transactions
-- [Okashi.dev](https://okashi.dev/) (for writting and testing the smart contract)
-- [React.JS](https://react.dev/learn) to build the frontend 
+- 📋 Registro de pases
+- 🆔 Generación de IDs únicos
+- ⚡ Gestión automática
+- 🌐 Persistencia blockchain
+- 🔒 Control descentralizado
 
 ---
 
-## Software Development Plan for CratePass dApp on Stellar Blockchain
+## ✅ Sistema de aprobación
 
-1. **Smart Contract Functions and Variables**
-
-   - Develop the smart contract to include key functions:
-     - `create_pass(env: Env, title: String, descrip: String)`: Allows regular users to register a gate pass and returns a unique pass-id.
-     - `view_my_pass(env: Env, unique_id: u64)`:Allow users to check the status details of their pass which is controlled by them.
-     - `expire_pass (env: Env, unique_id: u64)`: Allows users to expire their gate pass using it's unique-pass-id.
-     - `approve_pass (env: Env, ac_id: u64)`: Grants the admin the ability to approve a registered pass using its unique-pass-id. Here 'ac' stands for Admin-Control, because it's controlled by the admin.
-     - `view_all_pass_status(env: Env)`: Allow the admin to view all the pending, approved, expired and total passes made in the dApp.
-     - `view_ac_pass_by_unique_id(env: Env, unique_id: u64)`: Allow users to check the status details of their pass which is controlled by the Admin.
-
-   - Define essential variables:
-     - `struct Pass`: Stores user and their pass details like unique-pass-id, title, description, pass-created-time, in-time, and expiry status.
-     - `struct ApprovalStatus`: Stores the count of all types of pass statuses like the number of pending, approved, expired, and total passes.
-     - `struct Admincontrol`: stores the fields related to a pass, which are controlled or modified by the Admin. Those fields are ac_id(which basically represents the unique-pass-id of the 'Pass' struct), out-time, approval-status. 
-     - `enum Passbook`: Maps 'Pass' to its respective unique-pass-id.
-     - `Adminbook` : Maps 'Admincontrol' to its respective unique-pass-id 
-     - `const All_PASS`: Used for referencing the ApprovalStatus struct.
-     - `const COUNT_PASS`: Used for creating unique pass-IDs for newly created Passes.
-
-2. **Access Control**
-
-   - Only authorised Admin can call the approve_pass functions written insdie the smart-contract, in order to approve a pass.
-
-3. **Logic behind various functions defined inside the Smart Contract**
-
-   - Code the smart contract functions:
-     - `create_pass`: Make sure that each new pass get's a unique-ID. It then stores the data controlled by the Regular User inside the instance of 'Pass' struct, after this it stores that Pass instance onto the blockchain. Finally after the execution it returns the unique-pass-ID.
-     - `view_my_pass`: Allows regular users to fetch the data(controlled by them) of their pass status using its unique-pass-id.
-     - `expire_pass`: Make sure that the pass regular user wants to expire is approved by the admin. If the conditions get satisfied then it simply returns updates the 'isexpired' status of the pass and also updates the view_all_pass_status, else it will simply return Panic!.
-     - `approve_pass`: Before updating the approval status of a pass it makes sure that the pass is not already approved. If the conditions get satisfied then it simply updates the approval status, adds the out-time and updates the view_all_pass_status, else if the condition doesn't get statified then it will simply return Panic!.
-     - `view_all_pass_status`: Allows admin to see the count of pending, approved, expired, and total passes registered on the platform.
-     - `view_ac_pass_by_unique_id`:  Allow users to fetch the pass-details or data (controleld by the admin) using it's unique-pass-ID.
-
-4. **Front-End Development**
-
-   - React.JS has been used to make the front-end of this dApp, and TailwindCSS is used for styling the components
-
-5. **Deployment**
-   - Deployed the smart contract on the Stellar testnet.
+- 👨‍💼 Roles administrativos
+- 📊 Gestión de solicitudes
+- ⚡ Aprobación/Rechazo
+- 📋 Estado de accesos
+- 🔐 Control seguro
 
 ---
 
-## Deployed Smart Contract Address
+## ❌ Expiración de pases
 
-`CBPSRM3TVRYA6PT7ESIXC64QZDTKIQNSKBYJ4CED64CN2OITETB67X2P`
+- ⏰ Expiración manual
+- 📋 Historial de estados
+- ⚡ Actualización on-chain
+- 🌐 Gestión descentralizada
 
 ---
 
-## Set Up Environment / Project Installation Guide
+## 🌐 Blockchain Integration
 
-### A) Environment Setup:
+- ⭐ Stellar Network
+- 🧩 Soroban Smart Contracts
+- 🔗 Wallet Integration
+- ⚡ Smart contract execution
+- 🔒 Datos inmutables
 
-- Install Rust, using command:
-  `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+---
 
-- nstall the Soroban CLI using below mentioned command. For more info visit => [Soroban docs](https://developers.stellar.org/docs/smart-contracts)
-  `cargo install --locked soroban-cli`
+## 📱 Responsive UI
 
-- Install [Node.js](https://nodejs.org/en)
+- 💻 Desktop View
+- 📱 Mobile View
+- 📲 Tablet Support
+- ⚡ Interfaces dinámicas
+- 🎨 TailwindCSS UI
 
-- Get the [Freighter Wallet](https://www.freighter.app/) extension for you browser.
-  Once enabled, then got to the network section and connect your wallet to the testnet.
+---
 
-- Install wasm32-unknown-unknown package using command:
-  `rustup target add wasm32-unknown-unknown`
+# 👨‍💻 Módulos del sistema
 
-- To configure your CLI to interact with Testnet, run the following command:
+## 🧩 Smart Contract Module
 
+Contrato inteligente principal.
+
+### Funcionalidades:
+
+- 🚪 Crear pases
+- ✅ Aprobar accesos
+- ❌ Expirar pases
+- 📊 Consultar estados
+- 🌐 Blockchain persistence
+
+---
+
+## 👨‍💼 Admin Module
+
+Módulo administrativo.
+
+### Funcionalidades:
+
+- 📋 Aprobar solicitudes
+- ❌ Rechazar accesos
+- 📊 Ver estadísticas
+- 🔐 Gestión administrativa
+- ⚡ Control centralizado
+
+---
+
+## 👤 User Module
+
+Módulo de usuarios regulares.
+
+### Funcionalidades:
+
+- 🚪 Solicitar pases
+- 📋 Consultar estado
+- ❌ Expirar pases
+- 🔗 Interacción blockchain
+
+---
+
+## ⚛️ Frontend Module
+
+Interfaz React del sistema.
+
+### Funcionalidades:
+
+- 📱 Responsive Design
+- ⚡ Dynamic rendering
+- 🔔 User notifications
+- 🌐 Web3 integration
+- 📋 Dashboard UI
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+## ⚙️ Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,js,html,css,tailwind,nextjs" />
+</p>
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- TailwindCSS
+- Responsive Design
+
+---
+
+## ⚙️ Backend & Blockchain
+
+<p>
+  <img src="https://skillicons.dev/icons?i=rust,nodejs" />
+</p>
+
+- Rust
+- Soroban SDK
+- Stellar SDK
+- Smart Contracts
+- Node.js
+
+---
+
+## 🗄️ Blockchain
+
+<p>
+  <img src="https://skillicons.dev/icons?i=rust" />
+</p>
+
+- Stellar Blockchain
+- Soroban Smart Contracts
+- Web3 Architecture
+- Blockchain Storage
+- Decentralized Verification
+
+---
+
+## 🧰 Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,photoshop" />
+</p>
+
+- Git
+- GitHub
+- VS Code
+- Figma
+- Photoshop
+- Canva
+
+---
+
+# 📂 Estructura del proyecto
+
+```bash
+CratePass/
+│
+├── smart-contract/
+│   ├── contracts/
+│   │   └── Gate-Pass-Dapp/
+│   ├── Cargo.toml
+│   └── README.md
+├── src/
+├── public/
+├── components/
+├── docs/
+├── README.md
+└── LICENSE
 ```
+
+---
+
+# 🏗️ Arquitectura del sistema
+
+## ⚡ Arquitectura general
+
+```text
+Usuario → React Frontend → Soroban Smart Contract → Stellar Blockchain
+```
+
+---
+
+## 🔄 Flujo del sistema
+
+```text
+Usuario → Solicitud de pase → Admin → Aprobación → Blockchain Storage
+```
+
+---
+
+# 📊 Requerimientos funcionales
+
+## 🚪 Funcionalidades principales
+
+- Registro de gate-passes
+- Gestión administrativa
+- Verificación blockchain
+- Expiración de pases
+- Smart contracts Soroban
+- Frontend React
+- Responsive UI
+- Wallet integration
+
+---
+
+# 🔐 Requerimientos no funcionales
+
+## ⚡ Calidad del sistema
+
+- 🔒 Seguridad blockchain
+- ⚡ Respuesta rápida
+- 📈 Escalabilidad
+- 🌐 Transparencia
+- 📱 Compatibilidad multiplataforma
+- 🛠️ Código mantenible
+
+---
+
+# ⚡ Instalación
+
+## 📋 Requisitos
+
+- Rust
+- Soroban CLI
+- Node.js
+- npm
+- Freighter Wallet
+- Git
+- Navegador moderno
+
+---
+
+# 🚀 Configuración del entorno
+
+## 1️⃣ Instalar Rust
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+---
+
+## 2️⃣ Instalar Soroban CLI
+
+```bash
+cargo install --locked soroban-cli
+```
+
+---
+
+## 3️⃣ Instalar target WASM
+
+```bash
+rustup target add wasm32-unknown-unknown
+```
+
+---
+
+## 4️⃣ Configurar testnet
+
+```bash
 soroban network add \
   --global testnet \
   --rpc-url https://soroban-testnet.stellar.org:443 \
   --network-passphrase "Test SDF Network ; September 2015"
 ```
 
-- In order to deploy the smartcontract you will need an account. You can either use the an account from the `Freighter Wallet` or can configure an account named `alice` in the testnet using the command:
-  `soroban keys generate --global alice --network testnet`
+---
 
-- You can see the public key of account `alice`:
-  `soroban keys address alice`
+## 5️⃣ Generar cuenta testnet
+
+```bash
+soroban keys generate --global alice --network testnet
+```
 
 ---
 
-### B) Backend (Smart-contract) Setup:
+## 6️⃣ Ver dirección pública
 
-- Clone the repository:
-  `git clone https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project.git`
-
-- Smart-contract folder Structure:
-
-```.
-smart-contract
-        ├── Cargo.lock
-        ├── Cargo.toml
-        ├── README.md
-        └── contracts
-            └── Gate-Pass-Dapp
-                ├── Cargo.toml
-                └── src
-                    └── lib.rs
+```bash
+soroban keys address alice
 ```
 
-***=> Go inside the `/smart-contract` directory and do the below mentioned steps:***
+---
 
-- Build the contract:
+# 🦀 Backend Setup
 
+## 📥 Clonar repositorio
+
+```bash
+git clone https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project.git
 ```
+
+---
+
+## 📂 Entrar al directorio
+
+```bash
+cd smart-contract
+```
+
+---
+
+## 🏗️ Build del contrato
+
+```bash
 soroban contract build
 ```
 
-- Alternte command:
+---
 
-```
+## ⚙️ Build alternativo
+
+```bash
 cargo build --target wasm32-unknown-unknown --release
 ```
 
-- Install Optimizer:
+---
 
-```
-cargo install --locked soroban-cli --features opt
-```
+## 🚀 Optimizar contrato
 
-- Build an Opmize the contract:
-
-```
+```bash
 soroban contract optimize --wasm target/wasm32-unknown-unknown/release/Gate_Pass_Dapp.wasm
 ```
 
-### Steps to the Deploy smart-contract on testnet:
+---
 
-- Get the hash of the Wasm bytes, like ```4bb69f6355400b2954f9537ec55cd24c4a0a3021eae95758a088b383587657cb``` using this command:
+# 🌐 Deploy del contrato
 
+## 📦 Instalar contrato
+
+```bash
+soroban contract install --source-account bhupendra --wasm target/wasm32-unknown-unknown/release/Gate_Pass_Dapp.wasm
 ```
-soroban contract install --source-account bhupendra --wasm target/wasm32-unknown-unknown/release/Gate_Pass_Dapp.wasm --rpc-url https://soroban-testnet.stellar.org:443 --network-passphrase "Test SDF Network ; September 2015"
-```
 
-- By using that Wasm hash, deploy the smartcontract on the testnet and get deployed address of the smartcontract using the following command:
+---
 
-```
+## 🚀 Deploy en testnet
+
+```bash
 soroban contract deploy \
-  --wasm-hash 4bb69f6355400b2954f9537ec55cd24c4a0a3021eae95758a088b383587657cb \
+  --wasm-hash <WASM_HASH> \
   --source alice \
   --network testnet
 ```
 
-**_Deployed address of this smartcontract:_** `CBPSRM3TVRYA6PT7ESIXC64QZDTKIQNSKBYJ4CED64CN2OITETB67X2P`
+---
 
-\*NOTE: If you get the XDR Error `error: xdr processing error: xdr value invalid`, then follow this [article](https://stellar.org/blog/developers/protocol-21-upgrade-guide).
+# 🔗 Smart Contract Address
 
-### Invoke functions from the smart-contract:
+## 🌐 Contrato desplegado
 
-- #### To invoke any of the function from the smartcontract you can use this command fromat.
-
-```
-soroban contract invoke \
-  --id <DEPLOYED_CONTRACT_ADDRESS> \
-  --source <YOUR_ACCOUNT_NAME> \
-  --network testnet \
-  -- \
-  <FUNCTION_NAME> --<FUNCTION_PARAMETER> <ARGUMENT>
-```
-
-- #### For example:
-
-1. To status of all registered passes, invoke `view_all_pass_status` function.
-
-```
-soroban contract invoke \
-  --id CBPSRM3TVRYA6PT7ESIXC64QZDTKIQNSKBYJ4CED64CN2OITETB67X2P \
-  --source alice \
-  --network testnet \
-  -- \
-  view_all_pass_status
-```
-
-2. To create a new pass, invoke `create_pass` function:
-
-```
-soroban contract invoke \
-  --id CBPSRM3TVRYA6PT7ESIXC64QZDTKIQNSKBYJ4CED64CN2OITETB67X2P \
-  --source alice \
-  --network testnet \
-  -- \
-  create_pass --record_id <YOUR_PUBLIC_ADDRESS> --title "Going Home" --descrip "I am going to my home today."
+```text
+CBPSRM3TVRYA6PT7ESIXC64QZDTKIQNSKBYJ4CED64CN2OITETB67X2P
 ```
 
 ---
 
-### C) Frontend Setup (React JS):
-***=> Now come outside of the `/smart-contract` directory and do the below mentioned steps:***
+# ⚛️ Frontend Setup
 
-- Install essential nodejs dependencies, using command:
-```
+## 📦 Instalar dependencias
+
+```bash
 npm install
 ```
 
-- Make sure the "scripts" inside the package.json, looks like this:
-```
-  "scripts": {
-    "start": "HTTPS=true react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-```
+---
 
-***=> Inside the Soroban.js file you will find a variable named ```contractAddress```, which contains the deployed smart-contract address. File path: ```./src/components/Soroban/Soroban.js```***
+## 🚀 Ejecutar frontend
 
-- Finally start the server, using command:
-```
+```bash
 npm run start
 ```
 
-## **🙂 If you like my work, please give this project a ⭐. It motivates me alot.**
+---
+
+# 📸 Vista previa
+
+## 🖥️ Interfaces del sistema
+
+<div align="center">
+
+### 🚪 Creación de pases
+<img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/c110b525-f765-4f82-982b-c97821167a20" width="100%"/>
+
+### 📋 Estado de pases
+<img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/8038055d-ae3f-412b-b4ff-6213f0d703f4" width="100%"/>
+
+### 👨‍💼 Dashboard Admin
+<img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/f39f2c87-bbcf-4773-a6f7-a8638992595b" width="100%"/>
+
+### 📱 Mobile Responsive
+<img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/ef0f2b38-6e21-4c44-a8be-d59487a49e5e" width="45%"/>
+<img src="https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project/assets/78025043/466897e2-fb47-4a9a-a964-85720ed13558" width="45%"/>
+
+</div>
+
+---
+
+# 🧠 Funciones principales del contrato
+
+## 🚪 `create_pass`
+
+Registra un nuevo gate-pass y genera un ID único.
+
+---
+
+## 📋 `view_my_pass`
+
+Consulta el estado de un pase específico.
+
+---
+
+## ❌ `expire_pass`
+
+Expira un pase previamente aprobado.
+
+---
+
+## ✅ `approve_pass`
+
+Permite al administrador aprobar solicitudes.
+
+---
+
+## 📊 `view_all_pass_status`
+
+Obtiene estadísticas generales de pases.
+
+---
+
+# 🧠 Decisiones arquitectónicas
+
+## ☁️ Blockchain y descentralización
+
+- Arquitectura Web3
+- Smart contracts Soroban
+- Verificación blockchain
+- Ownership descentralizado
+- Persistencia inmutable
+
+---
+
+## ⚙️ Stack tecnológico
+
+- React + TailwindCSS
+- Rust Smart Contracts
+- Stellar Blockchain
+- Soroban SDK
+- Arquitectura modular
+
+---
+
+# 🚧 Roadmap
+
+## 🔮 Próximas mejoras
+
+- 🔐 Autenticación avanzada
+- 📊 Dashboard analítico
+- 🤖 Automatización IA
+- 🌐 Wallet integrations
+- 📱 Aplicación móvil
+- ☁️ Deploy cloud
+- 🔔 Notificaciones blockchain
+- 🌍 Multi-chain support
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Cómo contribuir
+
+1. Fork del proyecto
+
+```bash
+git checkout -b feature/nueva-funcionalidad
+```
+
+2. Commit
+
+```bash
+git commit -m "✨ Nueva funcionalidad"
+```
+
+3. Push
+
+```bash
+git push origin feature/nueva-funcionalidad
+```
+
+4. Pull Request 🚀
+
+---
+
+# 👨‍💻 Desarrollador
+
+<div align="center">
+
+## Isai Reyes — Blockchain Full Stack Developer
+
+Desarrollador apasionado por Web3, blockchain y aplicaciones descentralizadas modernas 🚀
+
+</div>
+
+---
+
+# 🌟 Apoya el proyecto
+
+⭐ Dale una estrella  
+🍴 Haz fork  
+📢 Comparte el proyecto
+
+---
+
+# 📜 Licencia
+
+Proyecto open source enfocado en blockchain, Soroban y sistemas descentralizados modernos.
+
+---
+
+<div align="center">
+
+### 🚪 CratePass — control de acceso inteligente sobre Stellar ⚡
+
+</div>
