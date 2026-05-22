@@ -225,7 +225,7 @@ Interfaz React del sistema.
 # 📂 Estructura del proyecto
 
 ```bash
-CratePass/
+Plataforma-descentralizada-de-gesti-n-de-gate-passes/
 │
 ├── smart-contract/
 │   ├── contracts/
@@ -360,7 +360,7 @@ soroban keys address alice
 ## 📥 Clonar repositorio
 
 ```bash
-git clone https://github.com/Bhupendrachouhan19/Soroban-Internship-Bootcamp-Final-Project.git
+git clone https://github.com/isairey/Plataforma-descentralizada-de-gesti-n-de-gate-passes.git
 ```
 
 ---
